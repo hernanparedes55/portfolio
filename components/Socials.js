@@ -3,34 +3,30 @@ import Link from 'next/link';
 
 // icons
 import {
-  RiYoutubeLine,
+  RiLinkedinLine,
   RiInstagramLine,
   RiFacebookLine,
-  RiDribbbleLine,
-  RiBehanceLine,
-  RiPinterestLine,
+  RiGithubLine,
+  RiProfileLine
 } from 'react-icons/ri';
 
 const Socials = () => {
   return (
     <div className='flex items-center gap-x-5 text-lg'>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiYoutubeLine />
+      <Link href={'https://www.linkedin.com/in/hernanparedes55/'} target='_blank' className='hover:text-accent transition-all duration-300'>
+        <RiLinkedinLine />
       </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
+      <Link href={'https://github.com/hernanparedes55'} target='_blank' className='hover:text-accent transition-all duration-300'>
+        <RiGithubLine />
+      </Link>
+      <Link href={'https://www.facebook.com/hernanparedes55/'} target='_blank' className='hover:text-accent transition-all duration-300'>
         <RiFacebookLine />
       </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
+      <Link href={'https://www.instagram.com/hernanparedes9/'} target='_blank' className='hover:text-accent transition-all duration-300'>
         <RiInstagramLine />
       </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiDribbbleLine />
-      </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiBehanceLine />
-      </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiPinterestLine />
+      <Link href={'./CV-HernanParedes2023.pdf'} target='_blank' className='hover:text-accent transition-all duration-300'>
+        <RiProfileLine />
       </Link>
     </div>
   );

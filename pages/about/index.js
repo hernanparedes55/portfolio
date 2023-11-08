@@ -126,8 +126,8 @@ const About = () => {
             exit='hidden'
             className='h2'
           >
-            ¡Bienvenito a mi <span className='text-accent'>mundo digital</span> de 
-            innovación!
+            Transformando <span className='text-accent'>ideas</span> en 
+            realidad digital.
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
@@ -136,8 +136,9 @@ const About = () => {
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
           >
-          Con más de 7 años de experiencia en el mundo de la tecnología y el desarrollo web,
-          he estado trabajando incansablemente para crear soluciones digitales impactantes y atractivas.
+          Con +7 años de experiencia en el mundo de la tecnología,
+          he participado en numerosos proyectos desde webs simples hasta aplicaciones complejas
+          para diversos rubros y clientes tanto privados como entidades públicas.
           </motion.p>
           {/* counters */}
           <motion.div

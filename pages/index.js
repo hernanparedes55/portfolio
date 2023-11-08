@@ -26,8 +26,8 @@ const Home = () => {
             exit='hidden'
             className='h1'
           >
-            Transformando Ideas <br /> en{' '}
-            <span className='text-accent'>Realidad Digital</span>
+            Bienvenid@ a mi <br /> {' '}
+            <span className='text-accent'>Portfolio Web!</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -37,7 +37,7 @@ const Home = () => {
             exit='hidden'
             className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
           >
-          Hola, mi nombre es Hernán y soy un apasionado de la informática,
+          Hola, mi nombre es Hernán y soy un desarrollador web, apasionado de la informática,
           la organización y el trabajo colaborativo.
           Siempre dispuesto a aprender nuevas tecnologías y compartir mis conocimientos con otras personas.
           </motion.p>
