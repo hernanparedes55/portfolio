@@ -12,9 +12,10 @@ import {
 
 import {
   SiNextdotjs,
-  SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
+  SiNodedotjs,
+  SiFlutter,
 } from 'react-icons/si';
 
 //  about data
@@ -23,25 +24,26 @@ export const aboutData = [
     title: 'skills',
     info: [
       {
-        title: 'Web Development',
+        title: 'Desarrollo Web',
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
           <FaReact />,
           <SiNextdotjs />,
-          <SiFramer />,
+          <SiNodedotjs />,
           <FaWordpress />,
+          <SiFlutter />,
         ],
       },
       {
-        title: 'UI/UX Design',
+        title: 'Diseño UI/UX',
         icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
       },
     ],
   },
-  {
-    title: 'awards',
+ /* {
+    title: 'Certificaciones',
     info: [
       {
         title: 'Webby Awards - Honoree',
@@ -52,38 +54,72 @@ export const aboutData = [
         stage: '2009 - 2010',
       },
     ],
-  },
+  },*/
   {
-    title: 'experience',
+    title: 'Experiencia',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Desarrollador Genexus - Banco de Córdoba',
+        stage: '2023 - Actualidad',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
-      },
+
+      title: 'Desarrollador Genexus - Sprint Informatica',
+      stage: '2023 - Actualidad',
+    },
+    {
+      title: 'Desarrollador Genexus - Municipalidad de Río Cuarto',
+      stage: '2022 - 2023',
+    },
+    {
+      title: 'Desarrollador Genexus - Inteligencia Fiscal',
+      stage: '2020 - 2022',
+    },
+    {
+      title: 'Desarrollador Genexus - Boetto y Buttigliengo',
+      stage: '2019 - 2020',
+    },
+    {
+      title: 'Community Manager',
+      stage: '2018 - 2020',
+    },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Wordpress',
+        stage: '2015 - 2018',
       },
+
     ],
   },
   {
-    title: 'credentials',
+    title: 'Certificaciones',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'Analista Senior Genexus',
+        stage: '2022',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
+        title: 'Desarrollador React JS - CoderHouse',
+        stage: '2021',
       },
       {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Analista Junior Genexus',
+        stage: '2019',
+      },
+      {
+        title: 'Diplomatura Community Manager - UTN Córdoba',
+        stage: '2019',
+      },
+      {
+        title: 'Scrum Foundation Professional Certificate - CertiProf',
+        stage: '2019',
+      },
+      {
+        title: 'Desarrollo Web - Instituto Mariano Moreno',
+        stage: '2018',
+      },
+      {
+        title: 'Excel Avanzado - Instituto Mariano Moreno',
+        stage: '2018',
       },
     ],
   },
@@ -107,15 +143,15 @@ const About = () => {
     <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
       <Circles />
       {/* avatar img */}
-      <motion.div
+      {/*<motion.div
         variants={fadeIn('right', 0.2)}
         initial='hidden'
         animate='show'
         exit='hidden'
-        className='hidden xl:flex absolute bottom-0 -left-[370px]'
+        className='hidden xl:flex absolute bottom-0 -left-[400px]'
       >
         <Avatar />
-      </motion.div>
+  </motion.div>*/}
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
         {/* text */}
         <div className='flex-1 flex flex-col justify-center'>
@@ -126,8 +162,8 @@ const About = () => {
             exit='hidden'
             className='h2'
           >
-            Transformando <span className='text-accent'>ideas</span> en 
-            realidad digital.
+            Convirtiendo <span className='text-accent'>conceptos</span> en 
+            experiencia digital.
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
@@ -152,7 +188,7 @@ const About = () => {
               {/* experience */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={7} duration={5} /> +
+                  <CountUp start={0} end={5} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                   Años de experiencia
@@ -161,28 +197,28 @@ const About = () => {
               {/* clients */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={250} duration={5} /> +
+                  <CountUp start={0} end={10} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Satisfied clients
+                  Clientes satisfechos
                 </div>
               </div>
               {/* projects */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={650} duration={5} /> +
+                  <CountUp start={0} end={15} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Finished projects
+                  Proyectos finalizados
                 </div>
               </div>
-              {/* awards */}
+              {/* credentials */}
               <div className='relative flex-1'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={8} duration={5} /> +
+                  <CountUp start={0} end={7} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Winning awards
+                  Certificaciones obtenidas
                 </div>
               </div>
             </div>

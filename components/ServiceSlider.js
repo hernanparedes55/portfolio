@@ -14,6 +14,7 @@ import {
   RxReader,
   RxRocket,
   RxArrowTopRight,
+  RxPerson
 } from 'react-icons/rx';
 
 // import required modules
@@ -22,30 +23,31 @@ import { FreeMode, Pagination } from 'swiper';
 // service data
 export const serviceData = [
   {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <RxDesktop />,
+    title: 'Aplicaciones Web',
+    description: 'Desarrollo de soluciones empresariales web robustas potenciadas con GeneXus.',
   },
   {
     icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Diseño UX/UI',
+    description: 'Transformación de ideas, en experiencias intuitivas y atractivas para tus productos digitales.',
   },
   {
-    icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <RxPerson />,
+    title: 'Community Manager',
+    description: 'Gestión profesional para aumentar tu presencia y visibilidad en redes sociales.',
   },
+
   {
     icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Sitios Web',
+    description: 'Ofrezco desarrollo de sitios dinámicos, desde webs empresariales hasta plataformas de ventas online.',
   },
-  {
+  /*{
     icon: <RxRocket />,
     title: 'SEO',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
+  },*/
 ];
 
 const ServiceSlider = () => {
