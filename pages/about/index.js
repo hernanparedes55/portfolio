@@ -126,7 +126,7 @@ export const aboutData = [
 ];
 
 // components
-import Avatar from '../../components/Avatar';
+/*import Avatar from '../../components/Avatar';*/
 import Circles from '../../components/Circles';
 
 // framer motion

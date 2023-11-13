@@ -79,9 +79,9 @@ const WorkSlider = () => {
       modules={[Pagination]}
       className='h-[280px] sm:h-[480px]'
     >
-      {workSlider.slides.map((slide, index) => {
+      {workSlider.slides.map((slide, SlideIndex) => {
         return (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={SlideIndex}>
             <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
               {slide.images.map((image, ImageIndex) => {
                 return (
