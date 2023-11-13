@@ -4,40 +4,48 @@ export const workSlider = {
     {
       images: [
         {
-          title: 'title',
-          path: '/thumb1.jpg',
+          title: 'Buscador de Bebidas',
+          path: '/bebidas.png',
+          url: 'https://gallant-sammet-d14e73.netlify.app/',
         },
         {
-          title: 'title',
-          path: '/thumb2.jpg',
+          title: 'Citas para Mascotas',
+          path: '/citas.png',
+          url: 'https://happy-yonath-425aec.netlify.app/',
         },
         {
-          title: 'title',
-          path: '/thumb3.jpg',
+          title: 'Cotizador de Criptos',
+          path: '/criptos.png',
+          url: 'https://lucid-morse-57ae92.netlify.app/',
         },
         {
-          title: 'title',
-          path: '/thumb4.jpg',
+          title: 'Crud',
+          path: '/crud.png',
+          url: 'https://sleepy-austin-6eab97.netlify.app/productos/nuevo',
         },
       ],
     },
     {
       images: [
         {
-          title: 'title',
-          path: '/thumb4.jpg',
+          title: 'Ferreteria',
+          path: '/ferreteria.png',
+          url: 'https://quizzical-ride-099e6f.netlify.app/',
         },
         {
-          title: 'title',
-          path: '/thumb1.jpg',
+          title: 'Soho',
+          path: '/soho.png',
+          url: 'https://genuine-bublanina-8268f1.netlify.app/',
         },
         {
           title: 'title',
           path: '/thumb2.jpg',
+          url: 'https://github.com/hernanparedes55/',
         },
         {
           title: 'title',
           path: '/thumb3.jpg',
+          url: 'https://github.com/hernanparedes55/',
         },
       ],
     },
@@ -59,6 +67,7 @@ import { Pagination } from 'swiper';
 import { BsArrowRight } from 'react-icons/bs';
 // next image
 import Image from 'next/image';
+import Link from 'next/link';
 
 const WorkSlider = () => {
   return (
@@ -74,11 +83,12 @@ const WorkSlider = () => {
         return (
           <SwiperSlide key={index}>
             <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
-              {slide.images.map((image, index) => {
+              {slide.images.map((image, ImageIndex) => {
                 return (
+                  <Link  href={image.url} key={ImageIndex} target="_blank">
                   <div
                     className='relative rounded-lg overflow-hidden flex items-center justify-center group'
-                    key={index}
+                    key={ImageIndex}
                   >
                     <div className='flex items-center justify-center relative overflow-hidden group'>
                       {/* image */}
@@ -89,10 +99,10 @@ const WorkSlider = () => {
                       <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
                         <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
                           {/* title part 1 */}
-                          <div className='delay-100'>LIVE</div>
+                          <div className='delay-100'>IR</div>
                           {/* title part 2 */}
                           <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>
-                            PROJECT
+                            AL PROYECTO
                           </div>
                           {/* icon */}
                           <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'>
@@ -102,6 +112,7 @@ const WorkSlider = () => {
                       </div>
                     </div>
                   </div>
+                  </Link>
                 );
               })}
             </div>
