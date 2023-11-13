@@ -79,16 +79,16 @@ const WorkSlider = () => {
       modules={[Pagination]}
       className='h-[280px] sm:h-[480px]'
     >
-      {workSlider.slides.map((slide, SlideIndex) => {
+      {workSlider.slides.map((slide, index) => {
         return (
-          <SwiperSlide key={SlideIndex}>
+          <SwiperSlide key={index}>
             <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
-              {slide.images.map((image, ImageIndex) => {
+              {slide.images.map((image, index) => {
                 return (
-                  <Link  href={image.url} key={ImageIndex} target="_blank">
+                  <Link  href={image.url} key={index} target="_blank">
                   <div
                     className='relative rounded-lg overflow-hidden flex items-center justify-center group'
-                    key={ImageIndex}
+                    key={index}
                   >
                     <div className='flex items-center justify-center relative overflow-hidden group'>
                       {/* image */}
